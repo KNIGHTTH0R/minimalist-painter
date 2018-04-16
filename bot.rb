@@ -11,9 +11,9 @@ client = Twitter::REST::Client.new do |config| # authenticate with twitter API
 end
 
 def generate_hex
-  alpha = ['a','b','c','d','e','f']
-  numeric = ['1','2','3','4','5','6']
-  valid_hex_values = alpha + numeric
+  hexa = ['a','b','c','d','e','f']
+  decimal = ['0','1','2','3','4','5','6','7','8','9']
+  valid_hex_values = hexa + decimal
   generated_hex = Array.new
   6.times do
     generated_hex.push(valid_hex_values.sample)
